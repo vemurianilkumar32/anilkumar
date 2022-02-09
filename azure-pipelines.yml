@@ -23,6 +23,6 @@ steps:
   inputs:
     sshEndpoint: 'lakshmivm'
     runOptions: 'inline'
-    inline: 'rm -rf testdevops'
+    inline: 'rm -rf /tmp/testdevops'
     readyTimeout: '20000'
 
