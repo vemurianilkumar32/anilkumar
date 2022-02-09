@@ -1,8 +1,10 @@
-fdjdflkgsoghrlgnfdglsrhgnfvfdgjdfvdbgreuhgdjfv.dfbvrfdbvjdfbv.bv.lbvldbv
-Renaming multiple files with the mv Command
-The mv command can rename only one file at a time, but it can be used in conjunction with other commands such as find or inside bash for or while loops to rename multiple files.
+Hey vemurianilkumar32!
 
-The following example shows how to use the Bash for loop to rename all .html files in the current directory by changing the .html extension to .php.
+A personal access token (KUMAR) with delete:packages, repo, and write:packages scopes was recently added to your account. Visit https://github.com/settings/tokens for more information.
 
-for f in *.html; do
-    mv -- "$f" "${f%.html}.php"
+To see this and other security events for your account, visit https://github.com/settings/security-log
+
+If you run into problems, please contact support by visiting https://github.com/contact
+
+Thanks,
+The GitHub Team
