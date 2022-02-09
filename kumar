@@ -1,1 +1,8 @@
 fdjdflkgsoghrlgnfdglsrhgnfvfdgjdfvdbgreuhgdjfv.dfbvrfdbvjdfbv.bv.lbvldbv
+Renaming multiple files with the mv Command
+The mv command can rename only one file at a time, but it can be used in conjunction with other commands such as find or inside bash for or while loops to rename multiple files.
+
+The following example shows how to use the Bash for loop to rename all .html files in the current directory by changing the .html extension to .php.
+
+for f in *.html; do
+    mv -- "$f" "${f%.html}.php"
