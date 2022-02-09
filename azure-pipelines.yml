@@ -19,10 +19,10 @@ steps:
     targetFolder: '/tmp/'
     readyTimeout: '20000'
 
-- task: Bash@3
+- task: SSH@0
   inputs:
-    targetType: 'inline'
-    script: |
-      # Write your commands here
-      rm -rf /tmp/testdevops
+    sshEndpoint: 'lakshmivm'
+    runOptions: 'inline'
+    inline: 'rm -rf testdevops'
+    readyTimeout: '20000'
 
