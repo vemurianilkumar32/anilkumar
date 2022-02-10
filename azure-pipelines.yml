@@ -11,19 +11,36 @@ pool:
 
 
 steps:
-- task: CopyFilesOverSSH@0
+
+- task: SSH@0
   inputs:
     sshEndpoint: 'lakshmivm'
-    sourceFolder: '$(System.DefaultWorkingDirectory)'
-    contents: '**'
-    targetFolder: '/tmp/'
+    runOptions: 'inline'
+    inline: 'mkdir  /home/lakshmi/krishna'
+
     readyTimeout: '20000'
 
 - task: SSH@0
   inputs:
     sshEndpoint: 'lakshmivm'
     runOptions: 'inline'
-    inline: 'touch  /home/lakshmi/sravanthi/krishna'
+    inline: 'touch  /home/lakshmi/krishna/lalitha'
+
+    readyTimeout: '20000'
+
+- task: SSH@0
+  inputs:
+    sshEndpoint: 'lakshmivm'
+    runOptions: 'inline'
+    inline: 'git add /home/lakshmi/krishna'
+
+    readyTimeout: '20000'
+
+- task: SSH@0
+  inputs:
+    sshEndpoint: 'lakshmivm'
+    runOptions: 'inline'
+    inline: 'git commit -m  /home/lakshmi/krishna'
 
     readyTimeout: '20000'
 
