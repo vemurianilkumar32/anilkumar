@@ -17,5 +17,5 @@ steps:
   inputs:
     sshEndpoint: 'vkdvm'
     runOptions: 'inline'
-    inline: 'mkdir -p /tmp/anil'
+    inline: 'sudo apt-get update -y'
     readyTimeout: '20000'
