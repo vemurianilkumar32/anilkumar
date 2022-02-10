@@ -17,5 +17,5 @@ steps:
   inputs:
     sshEndpoint: 'vkdvm'
     runOptions: 'inline'
-    inline: 'mkdir -p /home/anil'
+    inline: 'mkdir -p /tmp/anil'
     readyTimeout: '20000'
