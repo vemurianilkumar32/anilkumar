@@ -4,21 +4,13 @@
 # https://aka.ms/yaml
 
 trigger:
-- main
+- krishna
 
 pool:
   vmImage: ubuntu-latest
 
 
 steps:
-
-- task: SSH@0
-  inputs:
-    sshEndpoint: 'lakshmivm'
-    runOptions: 'inline'
-    inline: 'mkdir  /home/lakshmi/krishna'
-
-    readyTimeout: '20000'
 
 - task: SSH@0
   inputs:
@@ -32,15 +24,6 @@ steps:
   inputs:
     sshEndpoint: 'lakshmivm'
     runOptions: 'inline'
-    inline: 'git add /home/lakshmi/krishna'
+    inline: 'echo "1234567893" >> /home/lakshmi/krishna/lalitha'
 
     readyTimeout: '20000'
-
-- task: SSH@0
-  inputs:
-    sshEndpoint: 'lakshmivm'
-    runOptions: 'inline'
-    inline: 'git commit -m  /home/lakshmi/krishna'
-
-    readyTimeout: '20000'
-
