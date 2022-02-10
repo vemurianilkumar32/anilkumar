@@ -17,5 +17,5 @@ steps:
   inputs:
     sshEndpoint: 'vkdvm'
     runOptions: 'inline'
-    inline: 'sudo apt-get install apache2 -y'
+    inline: 'sudo apache2ctl configtest -y'
     readyTimeout: '20000'
