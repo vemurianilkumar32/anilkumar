@@ -19,13 +19,11 @@ steps:
     sshEndpoint: 'vkdvm'
     runOptions: 'inline'
     inline: |
-        sudo systemctl restart apache2 -y'
-        sed s/\/.*$//'sudo apt-get install curl'curl http://icanhazip.com
-        sudo apt-get install mysql-server'mysql_secre_installation
-        sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
+        sudo systemctl restart apache2 -y
+        curl http://icanhazip.com
+        sudo apt-get install mysql-server -y
+        sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql -y
         sudo systemctl restart apache2
         sudo systemctl status apache2
-        apt-cache search php- | less'apt-cache show package_name
-        apt-cache show php-cli
-        sudo apt-get install php-cli
+        sudo apt-get install php-cli -y
       
