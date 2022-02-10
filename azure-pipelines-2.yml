@@ -13,16 +13,11 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
-  
 - task: SSH@0
   inputs:
     sshEndpoint: 'vkdvm'
     runOptions: 'inline'
-    inline: 'mkdir /home/vkd/mms'
+    inline: 'mkdir -p /home/vkd/mms'
 
 
     readyTimeout: '20000'
