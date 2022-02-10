@@ -17,5 +17,5 @@ steps:
   inputs:
     sshEndpoint: 'vkdvm'
     runOptions: 'inline'
-    inline: 'sudo apache2ctl configtest -y'
+    inline: 'sudo apache2ctl configtest'
     readyTimeout: '20000'
