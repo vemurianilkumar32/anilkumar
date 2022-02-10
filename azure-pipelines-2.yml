@@ -18,4 +18,12 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
   
+- task: SSH@0
+  inputs:
+    sshEndpoint: 'lakshmivm'
+    runOptions: 'inline'
+    inline: 'mkdir /home/vkd/mms'
+
+
+    readyTimeout: '20000'
   
