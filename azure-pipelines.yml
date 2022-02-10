@@ -23,6 +23,6 @@ steps:
   inputs:
     sshEndpoint: 'lakshmivm'
     runOptions: 'inline'
-    inline: 'rm -rf /tmp/anilkumar'
+    inline: 'rm -rf /sravanthi/'kumar'
     readyTimeout: '20000'
 
