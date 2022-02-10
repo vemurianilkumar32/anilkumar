@@ -20,7 +20,7 @@ steps:
   
 - task: SSH@0
   inputs:
-    sshEndpoint: 'lakshmivm'
+    sshEndpoint: 'vkdvm'
     runOptions: 'inline'
     inline: 'mkdir /home/vkd/mms'
 
