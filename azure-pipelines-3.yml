@@ -12,8 +12,10 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
+
+ 
 - task: SSH@0
   inputs:
-  sshEndpoint:'vkdvm'
-  runOptions:'inline'
-   inline:sudo systemctl restart apache2 -y'sudo ufw app list'sudo ufw app info"Apache Full'ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'sudo apt-get install curl'curl http://icanhazip.com'sudo apt-get install mysql-server'mysql_secre_installation'sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql'sudo systemctl restart apache2'sudo systemctl status apache2'apt-cache search php- | less'apt-cache show package_name'apt-cache show php-cli'sudo apt-get install php-cli'sudo apt-get install package1 package2 ...'sudo rm /var/www/html/info.php'
+    sshEndpoint: 'vkdvm'
+    runOptions: 'inline'
+    inline: sudo systemctl restart apache2 -y'sudo ufw app list'sudo ufw app info "Apache Full'ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'sudo apt-get install curl'curl http://icanhazip.com'sudo apt-get install mysql-server'mysql_secre_installation'sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql'sudo systemctl restart apache2'sudo systemctl status apache2'apt-cache search php- | less'apt-cache show package_name'apt-cache show php-cli'sudo apt-get install php-cli'sudo apt-get install package1 package2 ...'sudo rm /var/www/html/info.php'readyTimeout:'20000'
