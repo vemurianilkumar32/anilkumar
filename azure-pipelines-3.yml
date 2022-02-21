@@ -14,13 +14,13 @@ steps:
   displayName: 'Run a one-line script'
 - task: Maven@1
   inputs:
-    mavenPomFile: 'anil/anilkumar/siva.xml'
+    mavenPomFile: '$(system.defaultworkingdirectory)/siva.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*siva.xml'
+    testResultsFiles: '$(system.defaultworkingdirectory)/siva.xml'
     goals: 'package'
 
 - task: CopyFiles@2
