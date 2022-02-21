@@ -12,13 +12,13 @@ pool:
 steps:
 - task: Maven@3
   inputs:
-    mavenPomFile: 'java-library/pom.xml'
+    mavenPomFile: 'java-library/siva.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    testResultsFiles: '**/surefire-reports/TEST-*siva.xml'
     goals: 'package'
 
 - task: CopyFiles@2
