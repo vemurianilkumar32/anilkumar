@@ -12,9 +12,9 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-- task: Maven@3
+- task: Maven@1
   inputs:
-    mavenPomFile: 'java-library/siva.xml'
+    mavenPomFile: 'anil/anilkumar/siva.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
